@@ -1034,7 +1034,7 @@ const urlFor = (source)=>image_url_default()(config).image(source);
 /* harmony export */   "c": () => (/* binding */ fetchExperiences)
 /* harmony export */ });
 const fetchExperiences = async ()=>{
-    const res = await fetch(`${"http://localhost:3000"}/api/getExperiences`);
+    const res = await fetch(`${"http://localhost:3000/"}api/getExperiences`);
     const data = await res.json();
     const experiences = data?.experiences;
     console.log("fetching", experiences);
@@ -1051,7 +1051,7 @@ const fetchExperiences = async ()=>{
 /* harmony export */   "R": () => (/* binding */ fetchPageInfo)
 /* harmony export */ });
 const fetchPageInfo = async ()=>{
-    const res = await fetch(`${"http://localhost:3000"}/api/getPageInfo`);
+    const res = await fetch(`${"http://localhost:3000/"}api/getPageInfo`);
     const data = await res.json();
     const pageInfo = data?.pageInfo;
     console.log("fetching", pageInfo);
@@ -1068,7 +1068,7 @@ const fetchPageInfo = async ()=>{
 /* harmony export */   "b": () => (/* binding */ fetchProjects)
 /* harmony export */ });
 const fetchProjects = async ()=>{
-    const res = await fetch(`${"http://localhost:3000"}/api/getProjects`);
+    const res = await fetch(`${"http://localhost:3000/"}api/getProjects`);
     const data = await res.json();
     const projects = data?.projects;
     console.log("fetching", projects);
@@ -1085,7 +1085,7 @@ const fetchProjects = async ()=>{
 /* harmony export */   "T": () => (/* binding */ fetchSkills)
 /* harmony export */ });
 const fetchSkills = async ()=>{
-    const res = await fetch(`${"http://localhost:3000"}/api/getSkills`);
+    const res = await fetch(`${"http://localhost:3000/"}api/getSkills`);
     const data = await res.json();
     const skills = data?.skills;
     console.log("fetching", skills);
@@ -1102,7 +1102,7 @@ const fetchSkills = async ()=>{
 /* harmony export */   "R": () => (/* binding */ fetchSocials)
 /* harmony export */ });
 const fetchSocials = async ()=>{
-    const res = await fetch(`${"http://localhost:3000"}/api/getSocials`);
+    const res = await fetch(`${"http://localhost:3000/"}api/getSocials`);
     const data = await res.json();
     const socials = data?.socials;
     console.log("fetching", socials);

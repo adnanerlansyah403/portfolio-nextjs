@@ -77,7 +77,7 @@ function Home({ pageInfo, experiences, skills, projects, socials }: Props) {
 
 export default Home
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetStaticProps<Props> = async () => {
   
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
@@ -93,10 +93,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects: projects || null,
       socials: socials || null,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 10,
   }
   
 }

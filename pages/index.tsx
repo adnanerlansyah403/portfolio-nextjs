@@ -93,6 +93,10 @@ export const getServerSideProps: GetStaticProps<Props> = async () => {
       projects: projects || null,
       socials: socials || null,
     },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10,
   }
   
 }

@@ -77,7 +77,7 @@ function Home({ pageInfo, experiences, skills, projects, socials }: Props) {
 
 export default Home
 
-export const getServerSideProps: GetStaticProps<Props> = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
